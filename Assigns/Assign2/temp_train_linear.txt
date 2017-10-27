@@ -1,0 +1,25 @@
+selectfeatures <- function(Xtemp,y,m,n){
+	X <- matrix(nrow = m, ncol = 1)
+	for(i in 1:n){
+		x  <- Xtemp[,i]
+		xy <- x * y
+		x2 <- x^2
+		y2 <- y^2
+		num <- ( ( m * sum(xy) )- ( sum(x)*sum(y) ) )
+		denom <- sqrt(((m*sum(x2))- (sum(x)^2) )*(((m*sum(y2))- (sum(y)^2)))
+		corr <- abs(num/denom)
+		if(corr > 0.5){
+			X <- cbind(X,x)
+		}
+	}
+	X <- X(2:ncol(X))
+	return(X)
+}
+
+for(i in 1:n){
+		for(j in 1:n){
+			if(i != j){
+				X <- cbind(X,(X[,i]*X[,j]))
+			}
+		}
+}

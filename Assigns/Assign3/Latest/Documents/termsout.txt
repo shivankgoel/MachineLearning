@@ -1,0 +1,2 @@
+microsoft;	sp1;	windows;	powerpoint;	wga;	datacenter;	npapi;	dllcache;	nplegitcheckplugin;
+doctor;	torchwood;	ianto;	sladen;	cohu;	collider;	syfy;	struan;	boeshane;
